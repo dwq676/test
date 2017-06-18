@@ -13,6 +13,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.quantil</groupId>
+            <artifactId>account-service</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.zoe.snow</groupId>
             <artifactId>snow-maven</artifactId>
             <version>${snow.version}</version>
