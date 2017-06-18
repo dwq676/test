@@ -7,4 +7,13 @@ package com.quantil.account;
  * @date 2017/6/16
  */
 public class TokenView {
+    private String token;
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 }
