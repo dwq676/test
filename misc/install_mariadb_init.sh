@@ -42,4 +42,5 @@ systemctl restart mariadb
 mysql -uroot -pQuantil@456123 -e "
 create user quantil@localhost identified by 'quantil@123456';
 grant all on *.* to quantil@localhost identified by 'quantil@123456';
+grant all privileges on *.* to quantil@'%' identified by 'quantil@123456';
 "
