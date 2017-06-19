@@ -24,7 +24,7 @@
                         <property name="writeAbleHost">
                             <bean class="com.zoe.snow.dao.DataSourceHost">
                                 <!--主机IP地址，可以输入对称加密后的地址-->
-                                <property name="ip" value="localhost"/>
+                                <property name="ip" value="220.243.197.87"/>
                                 <!--主机用户名，可以入对称加密后的用户名 -->
                                 <property name="user" value="quantil"/>
                                 <!--主机用户密码，可以输入 对称加密后的密码-->
