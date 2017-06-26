@@ -97,9 +97,9 @@ CREATE TABLE role (
   PRIMARY KEY (id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO role VALUES ('3ceb389c412911e7827f782bcb048924', null, 'admin', '管理员', null, null, null, null, null, '1');
-INSERT INTO role VALUES ('6b3b229241bb11e7827f782bcb048924', null, 'root', '超级管理员', null, null, null, null, null, '1');
-INSERT INTO role VALUES ('f88dec8241bc11e7827f782bcb048924', null, 'user', '普通用户', null, null, null, null, null, '1');
+INSERT INTO role VALUES ('3ceb389c412911e7827f782bcb048924', null, 'admin', 'Administrator', null, null, null, null, null, '1');
+INSERT INTO role VALUES ('6b3b229241bb11e7827f782bcb048924', null, 'root', 'Super administrator', null, null, null, null, null, '1');
+INSERT INTO role VALUES ('f88dec8241bc11e7827f782bcb048924', null, 'user', 'Regular user', null, null, null, null, null, '1');
 
 DROP TABLE IF EXISTS tenant;
 CREATE TABLE tenant (

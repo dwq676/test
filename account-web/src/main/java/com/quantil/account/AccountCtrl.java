@@ -77,17 +77,17 @@ public class AccountCtrl extends BaseCtrl {
 
     @RequestMapping(value = "/logout", method = RequestMethod.POST)
     @ApiOperation(value = "", notes = Notes.RESPONSE_HEAD + Description.LOGOUT_RESPONSE)
-    public Object logout(@ApiParam(name = "token", value = "token", required = true) @RequestBody String token) {
-        return reply(accountService.logout(token));
+    public Object logout(@ApiParam(name = "token", value = "token", required = true) @RequestBody TokenView token) {
+        return reply(accountService.logout(token.getToken()));
     }
 
     @RequestMapping(value = "/verify", method = RequestMethod.POST)
     @ApiOperation(value = "", notes = Notes.RESPONSE_HEAD + Description.VERIFY_RESPONSE)
-    public Object verify(@ApiParam(name = "token", value = "token", required = true) @RequestBody String token) {
-        return reply(accountService.verify(token));
+    public Object verify(@ApiParam(name = "token", value = "token", required = true) @RequestBody TokenView token) {
+        return reply(accountService.verify(token.getToken()));
     }
 
-    @RequestMapping(value = "/v/logout")
+    /*@RequestMapping(value = "/v/logout")
     @ApiOperation(value = "logout", hidden = true)
     public ModelAndView logoutTo() {
         if (session.get("is_authenticated")) {
@@ -103,7 +103,7 @@ public class AccountCtrl extends BaseCtrl {
             logout(getToken());
         }
         return new ModelAndView("redirect:../auth.html");
-    }
+    }*/
 
     @RequestMapping(value = "/test/{id}", method = RequestMethod.GET)
     @ApiOperation(value = "test", hidden = true)

@@ -32,7 +32,7 @@ public class Description {
                     "    \"expired_in\": 172800000,\n" +
                     "    \"role\": {\n" +
                     "      \"code\": \"\",\n" +
-                    "      \"description\": \"普通用户\",\n" +
+                    "      \"description\": \"Regular user\",\n" +
                     "      \"id\": \"f88dec8241bc11e7827f782bcb048924\",\n" +
                     "      \"name\": \"user\",\n" +
                     "      \"parent_id\": \"\"\n" +
@@ -61,7 +61,7 @@ public class Description {
                     "    \"expired_in\": 172800000,\n" +
                     "    \"role\": {\n" +
                     "      \"code\": \"\",\n" +
-                    "      \"description\": \"普通用户\",\n" +
+                    "      \"description\": \"Regular user\",\n" +
                     "      \"id\": \"f88dec8241bc11e7827f782bcb048924\",\n" +
                     "      \"name\": \"user\",\n" +
                     "      \"parent_id\": \"\"\n" +
